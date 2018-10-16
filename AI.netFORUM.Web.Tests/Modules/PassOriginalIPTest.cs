@@ -35,13 +35,13 @@ namespace AI.netFORUM.Web.Tests.Modules
         {
             var serverVariables = new NameValueCollection();
 
-            this.request.Setup(x => x.ServerVariables).Returns(serverVariables).Verifiable();
+            this.request.Setup(x => x.ServerVariables).Returns(serverVariables);
             this.SetupHeader("notanipaddress");
 
             var module = new PassOriginalIP();
             module.OnBeginRequest(context.Object);
 
-            request.VerifyAll();
+            request.Verify();
             Assert.AreEqual(0, serverVariables.Count);
         }
 
