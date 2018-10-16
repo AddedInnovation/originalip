@@ -1,8 +1,9 @@
-﻿using System;
+﻿using AI.netFORUM.Core;
+using System;
 using System.Text.RegularExpressions;
 using System.Web;
 
-namespace AI.netFORUM.Web.Modules
+namespace AI.Web.Modules
 {
     /// <summary>
     /// This module handles complications from our load balancer configuration not properly passing the client's true IP
@@ -13,7 +14,7 @@ namespace AI.netFORUM.Web.Modules
     /// or the web.config of a specific web server. 
     /// From Gist: https://gist.github.com/winzig/ee57e559341a2a92d8ee7bc0daa1304a
     /// </summary>
-    public class PassOriginalIP : HttpModuleBase
+    public class OriginalIP : HttpModuleBase
     {
         /// <summary>
         /// The IP we want will be in $1. X-Forwarded-For can carry multiple IPs in a comma-separated

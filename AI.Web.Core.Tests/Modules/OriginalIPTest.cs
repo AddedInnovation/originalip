@@ -1,19 +1,14 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using AI.netFORUM.Web.Modules;
-using System.Web;
-using Moq;
-using System.Net;
-using System.Linq;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Specialized;
-using System.Collections.Generic;
+using System.Net;
+using AI.Web.Core.Modules;
 
 namespace AI.netFORUM.Web.Tests.Modules
 {
     [TestClass]
-    public class PassOriginalIPTest : HttpUnitTestBase
+    public class OriginalIPTest : HttpUnitTestBase
     {
-        public PassOriginalIPTest()
+        public OriginalIPTest()
         {
         }
 
@@ -26,7 +21,7 @@ namespace AI.netFORUM.Web.Tests.Modules
         [TestMethod]
         public void ContextNull()
         {
-            var module = new PassOriginalIP();
+            var module = new OriginalIP();
             module.OnBeginRequest(null);
         }
 
@@ -38,7 +33,7 @@ namespace AI.netFORUM.Web.Tests.Modules
             this.request.Setup(x => x.ServerVariables).Returns(serverVariables);
             this.SetupHeader("notanipaddress");
 
-            var module = new PassOriginalIP();
+            var module = new OriginalIP();
             module.OnBeginRequest(context.Object);
 
             request.Verify();
@@ -54,7 +49,7 @@ namespace AI.netFORUM.Web.Tests.Modules
             this.SetupHeader(ip);
             this.request.Setup(x => x.ServerVariables).Returns(serverVariables).Verifiable();
 
-            var module = new PassOriginalIP();
+            var module = new OriginalIP();
             module.OnBeginRequest(context.Object);
 
             request.VerifyAll();
@@ -73,7 +68,7 @@ namespace AI.netFORUM.Web.Tests.Modules
             this.SetupHeader(ip);
             this.request.Setup(x => x.ServerVariables).Returns(serverVariables).Verifiable();
 
-            var module = new PassOriginalIP();
+            var module = new OriginalIP();
             module.OnBeginRequest(context.Object);
 
             request.VerifyAll();

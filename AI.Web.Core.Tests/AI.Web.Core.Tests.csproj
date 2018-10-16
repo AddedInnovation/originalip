@@ -65,16 +65,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="HttpUnitTestBase.cs" />
-    <Compile Include="Modules\PassOriginalIPTest.cs" />
+    <Compile Include="Modules\OriginalIPTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AI.netFORUM.Web\AI.netFORUM.Web.csproj">
-      <Project>{0fee8ca1-0b08-4fa2-ac1c-a5dfa5b9fc73}</Project>
-      <Name>AI.netFORUM.Web</Name>
+    <ProjectReference Include="..\AI.Web.Core\AI.Web.Core.csproj">
+      <Project>{aa99c47c-7edf-476f-8c45-93abe2da1e81}</Project>
+      <Name>AI.Web.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
