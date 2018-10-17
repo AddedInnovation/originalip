@@ -10,7 +10,7 @@ choco install ai-web-originalip
 
 ```
 
-* If you have IIS installed, it will call iisreset
+*If you have IIS installed, it will call iisreset*
 
 Next, open up a command prompt in admin mode use appcmd to add a [managed module](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754939%28v%3dws.10%29) to your site.
 
