@@ -14,9 +14,12 @@ function InstallGAC([string] $filePath)
 
 function ResetIIS()
 {
-	if ((Get-WindowsFeature Web-Server).InstallState -eq "Installed") {
+	$iis = Get-WmiObject -Query "select * from Win32_Service where name = 'W3svc'"
+
+	if ($iis)
+	{
 		Start-Process "iisreset.exe" -NoNewWindow -Wait
-	} 	
+	}
 }
 
 function MainChoco() 
