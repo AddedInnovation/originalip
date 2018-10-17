@@ -1,8 +1,7 @@
 # ASP.NET Web Modules
 
-## OriginalIP
+## OriginalIP [![Build Status](https://added.visualstudio.com/Added/_apis/build/status/GitHub/Original-IP)](https://added.visualstudio.com/Added/_build/latest?definitionId=2)
 Preserves the client's original IP address across load balancers or application gateways.
-[![Build Status](https://added.visualstudio.com/Added/_apis/build/status/GitHub/Original-IP)](https://added.visualstudio.com/Added/_build/latest?definitionId=2)
 
 First, install the assembly in the GAC with [Chocolatey](http://chocolatey.org/packages).
 
