@@ -55,7 +55,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Added.snk" />
-    <None Include="public.snk" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

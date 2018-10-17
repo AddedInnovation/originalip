@@ -11,15 +11,21 @@ function UnInstallGAC([string] $filePath)
 
 	[System.Reflection.Assembly]::Load("System.EnterpriseServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")            
 	$publish = New-Object System.EnterpriseServices.Internal.Publish            
-	$publish.GacRemove($filePath)
+	$publish.GacRemove($filePath)	
+}
 
-	iisreset
+function ResetIIS()
+{
+	if ((Get-WindowsFeature Web-Server).InstallState -eq "Installed") {
+		Start-Process "iisreset.exe" -NoNewWindow -Wait
+	} 	
 }
 
 function MainChoco() 
 {
 	try {
 		UnInstallGAC($filePath)		
+		ResetIIS
 	}
 	catch {
 		throw
