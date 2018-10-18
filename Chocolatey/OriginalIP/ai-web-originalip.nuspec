@@ -6,11 +6,14 @@
     <version>1.0.0</version>
     <authors>Mark Whisler</authors>
     <owners>Added Innovation</owners>
-    <summary>Original IP Address Module</summary>
-    <description>Retrieves and maintains the client originating IP address from load balancers and application gateways.</description>
+    <summary>Original IP Address HTTP Module</summary>
+    <description>Retrieves and preserves the client's originating IP address through load balancers and application gateways.  This installs a .NET assembly in the GAC in order to use the module in IIS.</description>
+    <tags>asp.net ip gateway balancer</tags>
     <projectUrl>https://github.com/AddedInnovation/originalip</projectUrl>
     <packageSourceUrl>https://github.com/AddedInnovation/originalip</packageSourceUrl>
-    <tags>asp.net ip gateway balancer</tags>
+    <projectSourceUrl>https://github.com/AddedInnovation/originalip</projectSourceUrl>
+    <docsUrl>https://github.com/AddedInnovation/originalip/blob/master/README.md</docsUrl>
+    <bugTrackerUrl>https://github.com/AddedInnovation/originalip/issues</bugTrackerUrl>
     <licenseUrl>https://github.com/AddedInnovation/originalip/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <iconUrl>https://a.dded.in/2rZVXX5</iconUrl>
