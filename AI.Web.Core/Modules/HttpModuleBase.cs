@@ -1,6 +1,6 @@
 ﻿using System.Web;
 
-namespace AI.Web.Core.Modules
+namespace Added.Web.Core.Modules
 {
     public abstract class HttpModuleBase : IHttpModule
     {

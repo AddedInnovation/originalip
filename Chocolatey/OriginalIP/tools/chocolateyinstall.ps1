@@ -2,7 +2,7 @@
 $ErrorActionPreference = 'Stop'; # stop on all errors
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $packageName = $env:ChocolateyPackageName
-$fileName = "AI.Web.Core"
+$fileName = "Added.Web.Core"
 $filePath = Join-Path $toolsDir "$fileName.dll"
 
 function InstallGAC([string] $filePath)

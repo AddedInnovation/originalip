@@ -7,8 +7,8 @@
     <ProjectGuid>{AA99C47C-7EDF-476F-8C45-93ABE2DA1E81}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AI.Web.Core</RootNamespace>
-    <AssemblyName>AI.Web.Core</AssemblyName>
+    <RootNamespace>Added.Web.Core</RootNamespace>
+    <AssemblyName>Added.Web.Core</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>

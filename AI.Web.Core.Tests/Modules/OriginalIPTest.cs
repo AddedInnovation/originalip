@@ -1,9 +1,9 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Specialized;
 using System.Net;
-using AI.Web.Core.Modules;
+using Added.Web.Core.Modules;
 
-namespace AI.netFORUM.Web.Tests.Modules
+namespace Added.netFORUM.Web.Tests.Modules
 {
     [TestClass]
     public class OriginalIPTest : HttpUnitTestBase

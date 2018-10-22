@@ -9,9 +9,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{1F750DEC
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{ED52E067-FD1B-4621-BDF4-79F3FE1E175F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AI.Web.Core", "AI.Web.Core\AI.Web.Core.csproj", "{AA99C47C-7EDF-476F-8C45-93ABE2DA1E81}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Added.Web.Core", "AI.Web.Core\Added.Web.Core.csproj", "{AA99C47C-7EDF-476F-8C45-93ABE2DA1E81}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AI.Web.Core.Tests", "AI.Web.Core.Tests\AI.Web.Core.Tests.csproj", "{184E78FA-AECE-4DF4-B5C0-EAEB411DBB91}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Added.Web.Core.Tests", "AI.Web.Core.Tests\Added.Web.Core.Tests.csproj", "{184E78FA-AECE-4DF4-B5C0-EAEB411DBB91}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

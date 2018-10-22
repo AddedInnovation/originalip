@@ -15,7 +15,7 @@ choco install ai-web-originalip
 Next, open up a command prompt in admin mode use appcmd to add a [managed module](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754939%28v%3dws.10%29) to your site.
 
 ```
-c:\windows\system32\inetsrv\appcmd add module /name:OriginalIP /type:"AI.Web.Core.Modules.OriginalIP, AI.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=94825510554e74d3" /preCondition:runtimeVersionv4.0,managedHandler /app.name:"Default Web Site/"
+c:\windows\system32\inetsrv\appcmd add module /name:OriginalIP /type:"Added.Web.Core.Modules.OriginalIP, AI.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=94825510554e74d3" /preCondition:runtimeVersionv4.0,managedHandler /app.name:"Default Web Site/"
 
 ```
 

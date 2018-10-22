@@ -2,7 +2,7 @@
 using System.Text.RegularExpressions;
 using System.Web;
 
-namespace AI.Web.Core.Modules
+namespace Added.Web.Core.Modules
 {
     /// <summary>
     /// This module handles complications from our load balancer configuration not properly passing the client's true IP

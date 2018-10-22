@@ -1,7 +1,7 @@
 ﻿using Moq;
 using System.Web;
 
-namespace AI.netFORUM.Web.Tests
+namespace Added.netFORUM.Web.Tests
 {
     public abstract class HttpUnitTestBase
     {
